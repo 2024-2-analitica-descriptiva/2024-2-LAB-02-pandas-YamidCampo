@@ -26,3 +26,5 @@ def pregunta_13():
     df_2 = pd.read_csv("files/input/tbl2.tsv", sep="\t")
     merged = pd.merge(df_0, df_2, on='c0')
     return merged.groupby('c1')['c5b'].sum()
+
+pregunta_13()
